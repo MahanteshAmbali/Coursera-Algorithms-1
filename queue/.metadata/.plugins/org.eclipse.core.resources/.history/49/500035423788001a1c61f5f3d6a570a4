@@ -1,0 +1,6 @@
+package org.coursera.alog1.submissions.queue;
+
+public class Deque<T> implements Iterable<T> {
+
+	
+}

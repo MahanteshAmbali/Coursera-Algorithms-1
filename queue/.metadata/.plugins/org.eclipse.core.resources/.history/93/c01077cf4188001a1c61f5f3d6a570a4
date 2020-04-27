@@ -1,0 +1,56 @@
+package org.coursera.alog1.submissions.queue;
+
+import java.util.Iterator;
+
+public class Deque<Item> implements Iterable<Item> {
+
+	private int first, last, n;
+	private Item[] dq;
+	
+	@SuppressWarnings("unchecked")
+	public Deque(){
+		first = 0;
+		last = 0;
+		n = 0;
+		
+		dq = (Item[]) new Object[2];
+ 	}
+	
+	public boolean isEmpty(){
+		
+		return n == 0;
+	}
+	
+	public int size(){
+		
+		return n;
+	}
+	
+	public void addFirst(Item item){
+		
+		if(item == null)		throw new IllegalArgumentException("Item to insert is not provided.");
+		
+		if(n == dq.length)	resize(dq.length * 2);
+		
+		
+ 	}
+	
+	
+	
+	
+	@SuppressedWarnin
+	public void resize(int newCapacity) {
+		
+		Item[] temp = (Item[]) new Object[newCapacity];
+		
+		
+	}
+	
+	@Override
+	public Iterator<Item> iterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}
